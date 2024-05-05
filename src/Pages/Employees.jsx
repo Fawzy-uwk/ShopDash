@@ -3,6 +3,7 @@ import {
   ColumnDirective,
   ColumnsDirective,
   ExcelExport,
+  Filter,
   GridComponent,
   Inject,
   Page,
@@ -15,7 +16,7 @@ import { employeesData, employeesGrid } from "../data/dummy";
 
 const Employees = () => {
   return (
-    <div className="md:m-8 p-2 bg-white md:p-8 rounded-3xl ">
+    <div className="md:m-8 p-2 mt-24 h-[100dvh] md:mt-0 bg-white md:p-8 rounded-3xl ">
       <Header title="Employees" category="Page" />
       <GridComponent
         className="overflow-x-scroll"
@@ -33,7 +34,15 @@ const Employees = () => {
           ))}
         </ColumnsDirective>
         <Inject
-          services={[Page, PdfExport, ExcelExport, Search, Sort,Toolbar]}
+          services={[
+            Page,
+            PdfExport,
+            ExcelExport,
+            Filter,
+            Search,
+            Sort,
+            Toolbar,
+          ]}
         />
       </GridComponent>
     </div>

@@ -14,13 +14,10 @@ import {
   Sort,
 } from "@syncfusion/ej2-react-grids";
 import { ordersData, ordersGrid } from "../data/dummy";
-import { useStateContext } from "../Contexts/ContextProvider";
 
 const Orders = () => {
-  const { currentMode } = useStateContext();
-
   return (
-    <div className="md:m-8 p-2 bg-white dark:bg-secondary-dark-bg md:p-8 rounded-3xl ">
+    <div className="md:m-8 h-[100dvh] mt-24 md:mt-0 p-2 bg-white dark:bg-secondary-dark-bg md:p-8 rounded-3xl ">
       <Header title="Orders" category="Page" />
       <GridComponent
         id="gridComp"
@@ -29,7 +26,6 @@ const Orders = () => {
         allowPaging
         allowFiltering
         allowSorting
-        
       >
         <ColumnsDirective>
           {ordersGrid.map((order, index) => (

@@ -32,7 +32,7 @@ const Customers = () => {
   };
 
   return (
-    <div className="md:m-8 p-2 bg-white md:p-8 rounded-3xl">
+    <div className="md:m-8 mt-24 md:mt-0 p-2 h-[100dvh] bg-white md:p-8 rounded-3xl">
       <Header title="Customers" category="Page" />
       <GridComponent
         ref={gridRef}

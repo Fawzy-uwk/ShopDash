@@ -9,6 +9,7 @@ import {
   Zoom,
   Logarithmic,
   Crosshair,
+  Legend,
 } from "@syncfusion/ej2-react-charts";
 
 import {
@@ -69,6 +70,7 @@ const Financial = () => {
               Logarithmic,
               Crosshair,
               Zoom,
+              Legend
             ]}
           />
           <SeriesCollectionDirective>

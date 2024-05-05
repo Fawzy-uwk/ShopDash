@@ -12,7 +12,7 @@ import { Header } from "../Components";
 import { EditorData } from "../data/dummy";
 
 const Editor = () => (
-  <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+  <div className="m-2 min-h-[100dvh] md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
     <Header category="App" title="Editor" />
     <RichTextEditorComponent>
       <EditorData />

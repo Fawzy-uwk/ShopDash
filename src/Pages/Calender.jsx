@@ -14,7 +14,7 @@ import { scheduleData } from "../data/dummy";
 
 const Calender = () => {
   return (
-    <div className="m-2 md:m-10 p-2 md:p-10 mt-28 bg-white rounded-3xl">
+    <div className="m-2 h-[100dvh] md:m-10 p-2 md:p-10 mt-28 bg-white rounded-3xl">
       <Header category="App" title="Schedules" />
       <ScheduleComponent
         height="700px"

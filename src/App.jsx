@@ -5,7 +5,7 @@ import {
   Footer,
   Navbar,
   Sidebar,
-  Stacked,
+  
   ThemeSettings,
 } from "./Components/index";
 import ColorPicker from "./Pages/ColorPicker";
@@ -57,7 +57,7 @@ function App() {
               </TooltipComponent>
             </div>
             {activeMenu ? (
-              <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+              <div className="w-72 relative min-h-[100dvh] fixed sidebar dark:bg-secondary-dark-bg bg-white ">
                 <Sidebar />
               </div>
             ) : (
