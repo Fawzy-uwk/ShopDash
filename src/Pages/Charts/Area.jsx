@@ -32,7 +32,7 @@ const Area = () => {
           legendSettings={{ background: "white" }}
           palettes={["#B31942","#002654","#FFCC00"]}
         >
-          <Inject services={[SplineAreaSeries, DateTime, Legend]} />
+          <Inject services={[SplineAreaSeries, DateTime, Legend]}  />
           <SeriesCollectionDirective>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             {areaCustomSeries.map((item, index) => (
