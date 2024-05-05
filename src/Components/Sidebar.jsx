@@ -15,7 +15,7 @@ const Sidebar = () => {
     <div
       className={
         activeMenu
-          ? "fixed h-[100dvh] p-3 bg-white dark:bg-main-dark-bg shadow-lg md:overflow-hidden md:hover:overflow-auto overflow-auto"
+          ? "fixed h-[100dvh] w-[inherit] p-3 bg-white dark:bg-main-dark-bg shadow-lg md:overflow-hidden md:hover:overflow-auto overflow-auto"
           : "hidden"
       }
     >
